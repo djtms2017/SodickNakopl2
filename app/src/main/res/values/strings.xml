@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sodick</string>
+    <string name="tab_text_1">Заход Электрода</string>
+    <string name="tab_text_2">Расчет Накопленной</string>
+
+    <string name="action_settings">Выход</string>
+    <string name="lengthelectrode">Длина электрода</string>
+    <string name="lenghtburned">Длина прожига</string>
+    <string name="approachelectrode">Заход электрода</string>
+    <string name="calcbutton">Вычислить</string>
+    <string name="clear">Очистить</string>
+    <string name="exit">Выход</string>
+    <string name="numbermessure">№ Изм.</string>
+    <string name="measuredvalue">Изм.знач.</string>
+    <string name="result">Результат</string>
+
+</resources>

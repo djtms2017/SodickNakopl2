@@ -1,0 +1,152 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/virus"
+
+    tools:context="com.example.djtms.sodicknakopl2.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/elLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Длина Электрода"
+        android:textColor="#1CE344"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@drawable/separator" />
+
+
+    <EditText
+        android:id="@+id/lengthEl"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="8"
+        android:layout_width="match_parent"
+        android:textColor="#F8F1F0"
+        android:layout_marginLeft="70dp"
+        android:textAlignment="center"
+        android:layout_marginRight="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorLink="#FBECEB"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/progLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Длина прожига"
+        android:textColor="#1CE344"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@drawable/separator" />
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="8"
+        android:layout_width="match_parent"
+        android:id="@+id/lengthProg"
+        android:textColor="#F8F1F0"
+        android:layout_marginLeft="70dp"
+        android:textAlignment="center"
+        android:layout_marginRight="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/elZahod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Заход электрода"
+        android:textColor="#1CE344"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@drawable/separator" />
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="8"
+        android:layout_width="match_parent"
+        android:id="@+id/zahodEl"
+        android:textColor="#F8F1F0"
+        android:layout_marginLeft="70dp"
+        android:textAlignment="center"
+        android:layout_marginRight="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+
+        android:background="@drawable/rectangle_rounded_70"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:onClick="onCalcClick"
+        android:padding="60dp"
+        android:singleLine="false"
+        android:soundEffectsEnabled="false"
+        android:text="Вычислить"
+        android:textColor="#DC0C1B"
+        android:textSize="20sp"
+        tools:ignore="OnClick"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_rounded_10"
+            android:gravity="center"
+            android:onClick="onClearClickNakopl"
+            android:text="Очистить"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_rounded_10"
+            android:gravity="center"
+            android:onClick="onExitButtonNakoplen"
+            android:text="Выход"
+            android:visibility="visible"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
